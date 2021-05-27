@@ -19,11 +19,11 @@ function setup(){
 function gotPoses(results){
     if(results.length >0){
         console.log(results);
-        nosex= results[0].pose.nose.x;
-        nosey= results[1].pose.nose.y;
+        nosex= results[0].pose.nose.x-15;
+        nosey= results[0].pose.nose.y-15;
 
-        console.log("nose x= " + results[0].pose.nose.x-15);
-        console.log("nose y= " + results[1].pose.nose.y-15);
+        console.log("nose x= " + results[0].pose.nose.x);
+        console.log("nose y= " + results[0].pose.nose.y);
     }
 }
 function modelLoaded(){
